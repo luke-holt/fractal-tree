@@ -48,8 +48,11 @@ main(int argc, char *argv[])
 
     Vector2 p0, p1;
     Line trunk;
-    trunk.p0 = (Vector2){ (float)sc_width / 2.0, (float)sc_height / 8.0 };
-    trunk.p1 = (Vector2){ (float)sc_width / 2.0, (float)sc_height / 4.0 };
+    float x, y;
+    x = (float)sc_width / 2.0;
+    y = (float)sc_height / 8.0;
+    trunk.p0 = (Vector2){ x, y };
+    trunk.p1 = (Vector2){ x, y * 3 };
     trunk.c = PURPLE;
 
     TreeNode *tree;
